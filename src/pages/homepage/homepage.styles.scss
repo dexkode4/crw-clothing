@@ -1,6 +1,17 @@
+@import '../../styles/generics.scss';
+
 .homepage {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 20px 80px;
+
+	@include md {
+		padding: 20px 40px;
+	}
+	@include sm {
+		padding: 20px;
+	}
+	
 }

@@ -1,3 +1,5 @@
+@import '../../styles/generics.scss';
+
 .menu-item {
 	min-width: 30%;
 	height: 240px;
@@ -24,6 +26,11 @@
 
 	&.large {
 		height: 380px;
+		
+		@include sm {
+			height: 240px;
+		}
+		
 	}
 	&:first-child {
 		margin-right: 7.5px;

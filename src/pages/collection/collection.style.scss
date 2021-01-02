@@ -1,3 +1,5 @@
+@import '../../styles/generics.scss';
+
 .collection-page {
     display: flex;
     flex-direction: column;
@@ -8,9 +10,11 @@
     }
   
     .items {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 10px;
+     @extend %grid-layout;
+
+     @include xl{
+      grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+  }
   
       & .collection-item {
         margin-bottom: 30px;

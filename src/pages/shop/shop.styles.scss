@@ -1,0 +1,7 @@
+@import '../../styles/generics.scss';
+
+.shop-page {
+    @include md {
+        padding: 0 40px;
+      }
+}
