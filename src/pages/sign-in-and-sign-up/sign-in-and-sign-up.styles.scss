@@ -1,6 +1,29 @@
+@import '../../styles/generics.scss';
+
 .sign-in-and-sign-up {
-	width: 850px;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	margin: 30px auto;
+
+	& > *:not(:last-child) {
+		margin-bottom: 5rem;
+		margin-right: 5rem;
+
+		@include md {
+			margin-right: 0;
+
+		}
+	}
+
+	& > * {
+		@include sm {
+			padding: 20px 40px;
+		}
+	}
+
+	@include md {
+		flex-direction: column;
+		align-items: center;
+	}
 }
